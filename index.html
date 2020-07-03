@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Index page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="leftside">
+                <div class="nav-link active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="about.html">About</a>
+                </div>
+
+            </div>
+
+            <div class="rightside">
+                <div class="brand">
+                    <div>PARINITA VEDANTAM</div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="content">
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/1.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle"> 
+                                This is picture 1
+                            </div>
+                             
+                        </div>
+                </div>
+
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/2.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 2
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/3.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 3
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/4.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 4
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/5.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 5
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/6.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 6
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/7.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 7
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/8.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 8
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background" >
+                        <img src="Images/9.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 9
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background">
+                        <img src="Images/10.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 10
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background">
+                        <img src="Images/11.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 11
+                            </div>
+                             
+                        </div>
+                </div>
+
+                <div class="portfolio-item">
+
+                    <div class="portfolio-img-background">
+                        <img src="Images/12.jpg" style="height: 100%; width: 100%;">
+                    </div>
+
+                        <div class="img-text">
+
+                            <div class="subtitle">
+                                This is picture 12
+                            </div>
+                             
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
