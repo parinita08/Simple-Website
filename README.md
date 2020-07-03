@@ -1,5 +1,5 @@
 # Simple-Website
-A professional website with HTML5, CSS3, and JavaScript.
+A professional website with HTML5, CSS3, and JavaScript. More pages can be added according to the users requirement.
 
 ## Home Page
 
